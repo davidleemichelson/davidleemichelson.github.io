@@ -24,6 +24,11 @@ a {
     text-decoration: underline;
     text-decoration-style: dashed;
 }
+#resume-link {
+    color: #A4BD99;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
 #name {
 	font-family: "Helvetica Neue";
 	font-size: 64px;
