@@ -1,0 +1,51 @@
+body {
+    transition: background 0.25s linear;
+}
+a {
+    text-decoration: none;
+}
+
+#headshot {
+    border-radius: 50%;
+    height: 50px;
+}
+#truecar-link {
+    color: #167ac6;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+#usc-link {
+    color: #990000;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+#scope-link {
+    color: #6734d1;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+#name {
+	font-family: "Helvetica Neue";
+	font-size: 64px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+}
+
+#bio {
+    font-family: "Helvetica Neue";
+	font-size: 32px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 33px;
+}
+#love-message {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Helvetica Neue";
+	font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+}
