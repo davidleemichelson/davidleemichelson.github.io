@@ -22,20 +22,20 @@
         <blockquote>
             <p id="bio">
                 product analyst intern, 
-                    <a onmouseover="changeBackgroundColor('#167ac6', this);" onmouseout="this.style.color='#167ac6'; changeBackgroundColor('white');" id="truecar-link" href="http://www.truecar.com">
+                    <a onmouseover="changeBackgroundColor('#167ac6', this);" onmouseout="this.style.color='#167ac6'; changeBackgroundColor('white');" onclick="trackWorkClick();" id="truecar-link" href="http://www.truecar.com">
                         <i>truecar.com</i>
                     </a><br>
                 comp sci & business administration, 
-                    <a onmouseover="changeBackgroundColor('#990000', this);" onmouseout="this.style.color='#990000'; changeBackgroundColor('white');" id="usc-link" href="https://www.usc.edu/">
+                    <a onmouseover="changeBackgroundColor('#990000', this);" onmouseout="this.style.color='#990000'; changeBackgroundColor('white');" onclick="trackSchoolClick();" id="usc-link" href="https://www.usc.edu/">
                         <i>university of southern california</i>
                     </a><br>
                 founder + director of culture,
-                    <a onmouseover="changeBackgroundColor('#6734d1', this);" onmouseout="this.style.color='#6734d1'; changeBackgroundColor('white');" id="scope-link" href="http://www.scopeusc.com/">
+                    <a onmouseover="changeBackgroundColor('#6734d1', this);" onmouseout="this.style.color='#6734d1'; changeBackgroundColor('white');" onclick="trackScopeClick();"  id="scope-link" href="http://www.scopeusc.com/">
                         <i>scopeusc.com</i>
                     </a><br>
                 <br>
                 check out my resume 
-                    <a onmouseover="changeBackgroundColor('#A4BD99', this);" onmouseout="this.style.color='#A4BD99'; changeBackgroundColor('white');" id="resume-link" href="https://drive.google.com/file/d/0B_UcrnS5So-Vbjl0bDc5czh5Yk0/view?usp=sharing">
+                    <a onmouseover="changeBackgroundColor('#A4BD99', this);" onmouseout="this.style.color='#A4BD99'; changeBackgroundColor('white');" onclick="trackResumeClick();" id="resume-link" href="https://drive.google.com/file/d/0B_UcrnS5So-Vbjl0bDc5czh5Yk0/view?usp=sharing">
                         <i>here</i>
                     </a>
             </p>
@@ -54,7 +54,20 @@
 
   ga('create', 'UA-100557195-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+<script>
+	function trackWorkClick() {
+		ga('send', 'event', 'Outbound Link Clicks', 'clickWorkLink', 'Work Link');
+	}
+	function trackSchoolClick() {
+		ga('send', 'event', 'Outbound Link Clicks', 'clickSchoolLink', 'School Link');
+	}
+	function trackScopeClick() {
+		ga('send', 'event', 'Outbound Link Clicks', 'clickScopeLink', 'Scope Link');
 
+	}
+	function trackResumeClick() {
+		ga('send', 'event', 'Outbound Link Clicks', 'clickResumeLink', 'Resume Link');
+	}
+</script>
 </html>
