@@ -55,3 +55,9 @@ a {
     font-weight: lighter;
     text-align: center;
 }
+.icon {
+    height: 180px;
+}
+.row {
+    text-align: center;
+}
