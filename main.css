@@ -45,6 +45,7 @@ a {
 	font-variant: normal;
 	font-weight: 100;
 	line-height: 33px;
+    margin-bottom: 7px;
 }
 #love-message {
     position: fixed;
